@@ -9,8 +9,8 @@ def http_post(url, api_key, content):
     return conn.getresponse()
 
 
-class Classifier(object):
-    URL_TPL = '/api/classifier/%s/predict'
+class BaseModel(object):
+    URL_TPL = None
 
     def __init__(self, api_key, model_name):
         self.api_key = api_key
@@ -22,3 +22,11 @@ class Classifier(object):
         url = self.URL_TPL % self.model_name
         response = http_post(url, self.api_key, p)
         return response.read()
+
+
+class Classifier(BaseModel):
+    URL_TPL = '/api/classifier/%s/predict'
+
+
+class Grouper(BaseModel):
+    URL_TPL = '/api/grouper/%s/predict'
