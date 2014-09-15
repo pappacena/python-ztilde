@@ -1,4 +1,5 @@
-import httplib, urllib
+import httplib
+import urllib
 
 
 def http_post(url, api_key, content, extra_headers={}):
