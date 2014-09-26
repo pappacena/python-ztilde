@@ -10,7 +10,7 @@ setup(
     url='http://www.ztilde.com/',
     author='Thiago F Pappacena',
     author_email='pappacena@ztilde.com',
-    description=('Python client lib for ztilde machine learning  services'),
+    description=('Python client lib for ztilde.com machine learning  services'),
     license='MIT',
     packages=find_packages(),
     install_requires=[
