@@ -94,7 +94,7 @@ class Classifier(BaseModel):
         if response.status != 200:
             raise ValueError(response.read())
         data = json.loads(response.read())
-        return Classifier.from_dict(data)
+        return Classifier.from_dict(data, api_key)
 
 
 class Clustering(BaseModel):
@@ -114,4 +114,4 @@ class Clustering(BaseModel):
         if response.status != 200:
             raise ValueError(response.read())
         data = json.loads(response.read())
-        return Clustering.from_dict(data)
+        return Clustering.from_dict(data, api_key)
