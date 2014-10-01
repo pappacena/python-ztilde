@@ -3,10 +3,10 @@ import urllib
 import json
 
 
-#HOST = 'ztilde.com'
-#PORT = 80
-HOST = 'localhost'
-PORT = 8000
+HOST = 'ztilde.com'
+PORT = 80
+#HOST = 'localhost'
+#PORT = 8000
 
 
 def http_post(url, api_key, content, extra_headers={}):

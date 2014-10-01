@@ -6,7 +6,7 @@ from distutils.sysconfig import get_python_lib
 
 setup(
     name='ztilde',
-    version='0.3',
+    version='0.4',
     url='http://www.ztilde.com/',
     author='Thiago F Pappacena',
     author_email='pappacena@ztilde.com',
